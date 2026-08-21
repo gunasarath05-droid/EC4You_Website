@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import pin from '../../../Image/about/pin.png'
 
 export default function Vision (){
@@ -38,9 +39,12 @@ export default function Vision (){
               "We believe that businesses of all sizes—small, medium, and large—can achieve greater
               success by effectively targeting the right audience."
             </p>
-            <button className="mt-6 bg-[#76a09a] text-white py-[15px] px-[45px] rounded-[8px] text-base sm:text-lg font-bold cursor-pointer transition-all duration-300 hover:bg-[#5f857f] hover:scale-105 shadow-md">
-              Services
-            </button>
+            <Link
+            to="/services"
+            className="btn-fill self-start bg-[#5d9c95] text-white hover:text-white font-bold md:px-8 px-4 py-2 md:py-3.5 rounded-lg text-base md:text-lg transition-all duration-300 shadow-md cursor-pointer -mt-8 md:mt-0"
+          >
+            <span className="relative z-10">Services</span>
+          </Link>
           </div>
 
         </div>

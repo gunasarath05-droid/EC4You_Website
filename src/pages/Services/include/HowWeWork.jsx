@@ -50,11 +50,11 @@ export default function HowWeWork() {
             {/* Action Button */}
             <div>
               <Link
-                to="/contact"
-                className="inline-block bg-[#52948e] text-white font-bold text-sm sm:text-base px-7 py-3 rounded-lg hover:bg-[#3f736e] hover:-translate-y-0.5 shadow-[0_4px_14px_rgba(82,148,142,0.3)] transition-all duration-200"
-              >
-                Contact Us
-              </Link>
+            to="/contact"
+            className="btn-fill self-start bg-[#5d9c95] text-white hover:text-white font-bold md:px-8 px-4 py-2 md:py-3.5 rounded-lg text-base md:text-lg transition-all duration-300 shadow-md cursor-pointer -mt-8 md:mt-0"
+          >
+            <span className="relative z-10">Contact Us</span>
+          </Link>
             </div>
 
             {/* Wavy Underline Decoration */}

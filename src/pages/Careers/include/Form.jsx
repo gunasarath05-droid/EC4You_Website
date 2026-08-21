@@ -318,15 +318,15 @@ export default function Form() {
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="bg-[#509995] text-white text-base md:text-lg font-medium px-8 py-3 rounded-lg hover:bg-[#3f7c79] transition-all shadow-md active:scale-95 cursor-pointer flex items-center justify-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed"
+                    className="btn-fill w-full bg-[#5d9c95] text-white font-bold px-8 py-3.5 rounded-lg text-base md:text-lg transition-all duration-300 shadow-md mt-2 cursor-pointer flex items-center justify-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed"
                   >
                     {isSubmitting ? (
                       <>
-                        <Loader2 className="w-5 h-5 animate-spin" />
-                        <span>Submitting...</span>
+                        <Loader2 className="w-5 h-5 animate-spin relative z-10" />
+                        <span className="relative z-10">Submitting...</span>
                       </>
                     ) : (
-                      <span>Submit</span>
+                      <span className="relative z-10">Submit</span>
                     )}
                   </button>
                 </div>
