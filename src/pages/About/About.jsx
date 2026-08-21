@@ -1,11 +1,11 @@
 import SEO from '../../components/SEO';
-import Hero from './include/hero';
+import Hero from './include/Hero';
 import Team from './include/Team';
 import Newsletter from '../../components/Newsletter/Newsletter';
 import Vision from './include/Vission';
 import Mission from './include/Mission';
 import CompanySuccess from './include/CompanySuccess';
-import Contact from './include/contact';
+import Contact from './include/Contact';
 
 const About = () => {
   

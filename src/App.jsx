@@ -6,7 +6,7 @@ import Footer from './components/Footer';
 import CustomCursor from './components/CustomCursor';
 import Home from './pages/Home/Home';
 import About from './pages/About/About';
-import Service from './pages/Services//include/Service';
+import Service from './pages/Services/include/Service';
 import WebDevelopment from './pages/Services/WebDevelopment';
 import DigitalMarketing from './pages/Services/DigitalMarketing';
 import AppDevelopment from './pages/Services/AppDevelopment';
