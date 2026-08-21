@@ -1,6 +1,6 @@
 import React from "react";
 import SEO from "../../components/SEO";
-import Hero from "./include/hero";
+import Hero from "./include/Hero";
 import Form from "./include/Form";
 import NewsletterSection from "../../components/Newsletter/Newsletter";
 
