@@ -20,6 +20,8 @@ import Contact from './pages/Contact/Contact';
 import PrivacyPolicy from './pages/Legal/PrivacyPolicy';
 import TermsOfService from './pages/Legal/TermsOfService';
 
+import NotFound from './pages/NotFound/NotFound';
+
 // Scroll to top on route change
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -43,6 +45,12 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/services" element={<Service />} />
+            <Route path="/services/web-development" element={<WebDevelopment />} />
+            <Route path="/services/digital-marketing" element={<DigitalMarketing />} />
+            <Route path="/services/app-development" element={<AppDevelopment />} />
+            <Route path="/services/graphic-design" element={<GraphicDesign />} />
+            <Route path="/services/email-marketing" element={<EmailMarketing />} />
+            <Route path="/services/cyber-security" element={<CyberSecurity />} />
             <Route path="/careers" element={<Careers />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:id" element={<BlogDetails />} />
@@ -51,6 +59,8 @@ function App() {
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/terms" element={<TermsOfService />} />
             <Route path="/terms-of-service" element={<TermsOfService />} />
+            {/* 404 Catch-all Route */}
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
         <Footer />
