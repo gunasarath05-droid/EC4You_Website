@@ -101,11 +101,12 @@ export default function Hero() {
               </h1>
 
               {/* CTA Button */}
-              <div className="pt-2">
-                <Link to="/contact" className="btn-fill bg-[#5d9c95] text-white font-bold px-8 py-3.5 rounded-lg text-lg transition-all duration-300 shadow-md cursor-pointer">
-                  <span className="relative z-10">Get Started</span>
-                </Link>
-              </div>
+              <Link
+                to="/contact"
+                className="btn-fill bg-[#5d9c95] w-fit text-white hover:text-white font-bold px-6 py-2.5 md:px-8 md:py-3.5 rounded-lg text-base md:text-lg transition-all duration-300 shadow-md whitespace-nowrap cursor-pointer"
+              >
+                <span className="relative z-10">Get Started</span>
+              </Link>
 
             </div>
 
