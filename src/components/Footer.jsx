@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram, FaEnvelope, FaPhone, FaMapMarkerAlt } from 'react-icons/fa';
 import logo from '../Image/logo1.png'
+import { FaX, FaXTwitter } from 'react-icons/fa6';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -16,10 +17,10 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-    { icon: <FaFacebookF />, url: 'https://facebook.com', label: 'Facebook' },
-    { icon: <FaTwitter />, url: 'https://twitter.com', label: 'Twitter' },
-    { icon: <FaLinkedinIn />, url: 'https://linkedin.com', label: 'LinkedIn' },
-    { icon: <FaInstagram />, url: 'https://instagram.com', label: 'Instagram' },
+    { icon: <FaFacebookF />, url: 'https://www.facebook.com/profile.php?id=61583296400117', label: 'Facebook' },
+    { icon: <FaXTwitter />, url: 'https://x.com/ec4you43786?s=20', label: 'X' },
+    { icon: <FaLinkedinIn />, url: 'https://www.linkedin.com/company/ec4you-digital-marketing/', label: 'LinkedIn' },
+    { icon: <FaInstagram />, url: 'https://www.instagram.com/ec4you_digital/', label: 'Instagram' },
   ];
 
   const scrollTop = () => window.scrollTo({ top: 0, behavior: 'instant' });
@@ -49,7 +50,7 @@ const Footer = () => {
                     href={social.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-10 h-10 md:w-11 md:h-11 rounded-2xl flex items-center justify-center text-[#a8d5d0] text-lg transition-all duration-300 border hover:bg-brand-primary hover:text-white hover:-translate-y-1 hover:shadow-xl hover:border-brand-primary"
+                    className="w-10 h-10 md:w-11 md:h-11 rounded-2xl flex items-center justify-center text-[#a8d5d0] text-lg transition-all duration-300 border hover:-translate-y-2 hover:shadow-xl hover:border-brand-primary"
                     style={{ backgroundColor: 'rgba(255,255,255,0.08)', borderColor: 'rgba(255,255,255,0.1)' }}
                     aria-label={social.label}
                   >

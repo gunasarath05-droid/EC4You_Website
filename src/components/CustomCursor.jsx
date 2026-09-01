@@ -24,7 +24,7 @@ export default function CustomCursor() {
       mousePos.current = { x: e.clientX, y: e.clientY };
       if (!isVisible) setIsVisible(true);
 
-      // Instantly position the central dot for zero latency
+      // Instantly position the central dot for crisp zero-latency tracking
       if (dotRef.current) {
         dotRef.current.style.transform = `translate3d(${e.clientX}px, ${e.clientY}px, 0) translate(-50%, -50%)`;
       }
@@ -54,9 +54,9 @@ export default function CustomCursor() {
       }
     };
 
-    // Smooth Lerp Animation Loop for Outer Ring
+    // Smooth Lerp Animation Loop for Outer Disc
     const render = () => {
-      const lerpFactor = 0.16; // Smoothness factor
+      const lerpFactor = 0.16; // Smoothness trailing factor
       ringPos.current.x += (mousePos.current.x - ringPos.current.x) * lerpFactor;
       ringPos.current.y += (mousePos.current.y - ringPos.current.y) * lerpFactor;
 
@@ -96,35 +96,32 @@ export default function CustomCursor() {
       }`}
       aria-hidden="true"
     >
-      {/* ── Inner Fast Tracking Core Dot ── */}
+      {/* ── Outer Smooth Trailing Soft Pastel Coral/Peach Disc ── */}
+      <div
+        ref={ringRef}
+        className="fixed top-0 left-0 rounded-full pointer-events-none will-change-transform"
+        style={{
+          width: isClicked ? '26px' : isHovered ? '48px' : '36px',
+          height: isClicked ? '26px' : isHovered ? '48px' : '36px',
+          backgroundColor: '#f8bca8',
+          opacity: isHovered ? 0.88 : 0.78,
+          transition:
+            'width 0.28s cubic-bezier(0.25, 1, 0.5, 1), height 0.28s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.25s ease',
+        }}
+      />
+
+      {/* ── Inner Solid Vibrant Orange Core Dot ── */}
       <div
         ref={dotRef}
         className="fixed top-0 left-0 rounded-full pointer-events-none will-change-transform"
         style={{
-          width: isHovered ? '6px' : '8px',
-          height: isHovered ? '6px' : '8px',
-          backgroundColor: '#ff7f50',
-          boxShadow: '0 0 10px rgba(255, 127, 80, 0.6)',
-          transition: 'width 0.25s ease, height 0.25s ease, opacity 0.25s ease',
-        }}
-      />
-
-      {/* ── Outer Smooth Trailing Physics Ring ── */}
-      <div
-        ref={ringRef}
-        className="fixed top-0 left-0 rounded-full pointer-events-none will-change-transform flex items-center justify-center"
-        style={{
-          width: isClicked ? '26px' : isHovered ? '50px' : '36px',
-          height: isClicked ? '26px' : isHovered ? '50px' : '36px',
-          border: isHovered ? '1.5px solid rgba(255, 127, 80, 0.85)' : '1.5px solid rgba(255, 127, 80, 0.55)',
-          backgroundColor: isHovered ? 'rgba(255, 127, 80, 0.12)' : 'rgba(255, 127, 80, 0.04)',
-          backdropFilter: isHovered ? 'blur(1px)' : 'none',
-          boxShadow: isHovered
-            ? '0 0 20px rgba(255, 127, 80, 0.35), inset 0 0 10px rgba(255, 127, 80, 0.15)'
-            : '0 0 8px rgba(255, 127, 80, 0.15)',
-          transition: 'width 0.25s cubic-bezier(0.25, 1, 0.5, 1), height 0.25s cubic-bezier(0.25, 1, 0.5, 1), background-color 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease',
+          width: isHovered ? '10px' : '8px',
+          height: isHovered ? '10px' : '8px',
+          backgroundColor: '#e85d3a',
+          transition: 'width 0.2s ease, height 0.2s ease',
         }}
       />
     </div>
   );
 }
+

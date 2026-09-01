@@ -33,3 +33,6 @@ Allow: /
 
 # Sitemap location
 Sitemap: https://www.ec4you.in/sitemap.xml
+
+# LLM / AI Agent accessibility (llmstxt.org standard)
+# https://www.ec4you.in/llms.txt

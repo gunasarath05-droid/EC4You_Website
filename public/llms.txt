@@ -1,0 +1,54 @@
+# EC4YOU Digital Marketing
+
+> EC4YOU is a full-service digital marketing and technology company based in Chennai, India. We help businesses grow through innovative technology, creative design, and strategic marketing solutions.
+
+## About
+
+EC4YOU (ec4you.in) is a Chennai-based digital agency offering end-to-end digital solutions. Founded with the mission of making digital excellence accessible to all businesses — from startups to enterprises — we combine data-driven strategy with creative execution.
+
+- **Location:** Chennai, Tamil Nadu, India
+- **Website:** https://www.ec4you.in
+- **Contact Email:** ec4youdigital@gmail.com
+- **Phone:** +91 7010942474
+
+## Services
+
+- **Digital Marketing:** SEO, Social Media Marketing, Google Ads, Content Marketing, Email Campaigns
+- **Web Development:** Custom websites, React/Next.js web apps, E-commerce, Landing pages
+- **App Development:** iOS & Android mobile apps, Cross-platform development
+- **Graphic Design:** Brand identity, Logo design, UI/UX design, Print & digital assets
+- **Cyber Security:** Vulnerability assessment, Security audits, Data protection consulting
+- **Email Marketing:** Campaign design, automation, list management, performance analytics
+
+## Pages
+
+- [Home](https://www.ec4you.in/): Overview of services, portfolio highlights, client testimonials, and contact CTA
+- [About](https://www.ec4you.in/about): Company story, team members, vision, mission, and certifications
+- [Services](https://www.ec4you.in/services): Detailed breakdown of all service offerings with sub-pages per category
+  - [Web Development](https://www.ec4you.in/services/web-development)
+  - [App Development](https://www.ec4you.in/services/app-development)
+  - [Digital Marketing](https://www.ec4you.in/services/digital-marketing)
+  - [Graphic Design](https://www.ec4you.in/services/graphic-design)
+  - [Cyber Security](https://www.ec4you.in/services/cyber-security)
+  - [Email Marketing](https://www.ec4you.in/services/email-marketing)
+- [Blog](https://www.ec4you.in/blog): Articles on digital marketing, SEO, web development, and tech trends
+- [Careers](https://www.ec4you.in/careers): Open positions and application portal
+- [Contact](https://www.ec4you.in/contact): Contact form, location map, phone, and email
+
+## Social Media
+
+- [Facebook](https://www.facebook.com/profile.php?id=61583296400117)
+- [X / Twitter](https://x.com/ec4you43786?s=20)
+- [LinkedIn](https://www.linkedin.com/company/ec4you-digital-marketing/)
+- [Instagram](https://www.instagram.com/ec4you_digital/)
+
+## Technical
+
+- **Sitemap:** https://www.ec4you.in/sitemap.xml
+- **Robots:** https://www.ec4you.in/robots.txt
+- **Stack:** React, Vite, Tailwind CSS, Node.js
+
+## Optional
+
+- [Privacy Policy](https://www.ec4you.in/privacy-policy)
+- [Terms of Service](https://www.ec4you.in/terms-of-service)
