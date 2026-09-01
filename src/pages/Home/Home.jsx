@@ -26,7 +26,7 @@ const Home = () => {
   return (
     <div className="home-page">
       <SEO
-        title="Best Digital Marketing & Web Development Agency"
+        title="Ensuring your presence in the digital era"
         description="EC4YOU is a premier digital marketing, website development, mobile app, and brand strategy agency in Chennai, India. Boost your brand visibility and ROI with our experts."
         keywords={["digital marketing agency", "web development chennai", "app development", "SEO company India", "social media marketing", "UI UX design"]}
         canonical="https://www.ec4you.in/"
