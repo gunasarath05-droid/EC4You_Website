@@ -4,6 +4,7 @@ import circle2 from '../../../Image/Home/hero/banner_shape02.png';
 import circle3 from '../../../Image/Home/hero/banner_shape03.png';
 import bgcircle from '../../../Image/Home/hero/bg-circle.png';
 import homehero from '../../../Image/Home/digital-market.png';
+import { Link } from 'react-router-dom';
 
 export default function Hero() {
   return (
@@ -101,10 +102,11 @@ export default function Hero() {
 
               {/* CTA Button */}
               <div className="pt-2">
-                <button className="btn-fill bg-[#5d9c95] text-white font-bold px-8 py-3.5 rounded-lg text-lg transition-all duration-300 shadow-md cursor-pointer">
-                  <span className="relative z-10">Get Started</span>
-                </button>
+                <Link to="/contact" className="btn-fill bg-[#5d9c95] text-white font-bold px-8 py-3.5 rounded-lg text-lg transition-all duration-300 shadow-md cursor-pointer">
+                  Get Started
+                </Link>
               </div>
+
 
             </div>
 
