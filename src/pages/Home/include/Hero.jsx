@@ -103,10 +103,9 @@ export default function Hero() {
               {/* CTA Button */}
               <div className="pt-2">
                 <Link to="/contact" className="btn-fill bg-[#5d9c95] text-white font-bold px-8 py-3.5 rounded-lg text-lg transition-all duration-300 shadow-md cursor-pointer">
-                  Get Started
+                  <span className="relative z-10">Get Started</span>
                 </Link>
               </div>
-
 
             </div>
 
